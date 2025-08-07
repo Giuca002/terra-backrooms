@@ -1,0 +1,64 @@
+id: BACKROOMS
+version: 1.0.0
+author: Giuca002
+
+addons:
+  language-yaml: 0.1.+
+  chunk-generator-noise-3d: 0.1.+
+  config-noise-function: 0.1.+
+  palette-block-shortcut: 0.1.+
+  config-biome: 0.1.+
+  biome-provider-single: 0.1.+
+  config-feature: "1.+"
+  config-distributors: "1.+"
+  structure-block-shortcut: "1.+"
+  generation-stage-feature: "1.+"  
+
+generator: NOISE_3D
+
+id: BACKROOMS
+version: 1.0.0
+author: Giuca002
+
+addons:
+  language-yaml: 0.1.+
+  chunk-generator-noise-3d: 0.1.+
+  config-noise-function: 0.1.+
+  palette-block-shortcut: 0.1.+
+  config-biome: 0.1.+
+  biome-provider-single: 0.1.+
+  config-feature: "1.+"
+  config-distributors: "1.+"
+  structure-block-shortcut: "1.+"
+  generation-stage-feature: "1.+"
+  config-locators: "1.+"
+  structure-sponge-loader: "1.+"
+  biome-provider-pipeline-v2: "1.+"
+
+generator: NOISE_3D
+
+biomes:
+  type: PIPELINE
+  biome: LEVEL_0
+  resolution: 4
+  pipeline:
+    source:
+      type: SAMPLER
+      sampler:
+        dimensions: 2
+        type: CONSTANT
+      biomes:
+        - rooms: 1
+    stages:
+      - type: REPLACE
+        sampler:
+          type: OPEN_SIMPLEX_2
+          frequency: 0.01
+        from: rooms
+        to:
+          - LEVEL_0: 8
+          - LEVEL_0_OPEN: 1
+stages:
+  - id: rooms
+    type: FEATURE
+
