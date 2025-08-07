@@ -1,0 +1,27 @@
+id: LEVEL_0_OPEN
+type: BIOME
+vanilla: minecraft:the_void
+
+terrain:
+  sampler:
+    type: EXPRESSION
+    expression: if(y = 0, 1, -2)
+
+  sampler-2d:
+    type: EXPRESSION
+    dimensions: 2
+    expression: (simplex(x, z)+1) * 2
+    samplers:
+      simplex:
+        type: OPEN_SIMPLEX_2
+        dimensions: 2
+        frequency: 0.04
+
+palette:
+  - BLOCK:minecraft:air: 319
+  - BLOCK:minecraft:bedrock: 0
+  - BLOCK:minecraft:air: -1
+
+features:
+  rooms:
+    - ROOM_FEATURE_OPEN
