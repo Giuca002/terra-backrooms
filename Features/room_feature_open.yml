@@ -1,0 +1,22 @@
+id: ROOM_FEATURE_OPEN
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 1  # grid spacing
+  padding: 6
+  salt: 0     # no randomness
+
+locator:
+  type: SURFACE
+  range:
+    min: 0
+    max: 2
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+    salt: 4357
+  structures:
+    #!-- Sector 1
+    - 0_sector1_10: 1
