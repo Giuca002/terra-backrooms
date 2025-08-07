@@ -1,5 +1,7 @@
 # Terra Backrooms
 
+![Terra Backrooms Logo](https://raw.githubusercontent.com/Giuca002/terra-backrooms/refs/heads/main/terrabackrooms.png)
+
 **Terra Backrooms** is a project designed to push the boundaries of what’s possible with the Terra plugin. It uses a simple yet powerful system to generate a Backrooms-like environment.
 
 This pack is a derivative of *Infrooms*, a server project currently being developed by **Giuca002**. The goal of Terra Backrooms is to demonstrate to newer Terra users that the plugin is capable of much more than traditional terrain generation.
