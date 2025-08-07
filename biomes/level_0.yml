@@ -1,0 +1,18 @@
+id: LEVEL_0
+type: BIOME
+
+vanilla: minecraft:the_void
+
+terrain:
+  sampler:
+    type: EXPRESSION
+    expression: if(y = 0, 1, -2)
+
+palette:
+  - BLOCK:minecraft:air: 319
+  - BLOCK:minecraft:bedrock: 0
+  - BLOCK:minecraft:air: -1
+
+features:
+  rooms:
+    - ROOM_FEATURE
